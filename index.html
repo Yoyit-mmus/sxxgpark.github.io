@@ -1,7 +1,56 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="박성현의 개인 홈페이지" />
+    <title>박성현 | 개인 홈페이지</title>
+    <style>
+      :root { --navy: #173b5e; --blue: #2f80c8; --ink: #1d2935; --muted: #627181; --line: #dce5ec; --paper: #fff; --soft: #f2f7fa; }
+      * { box-sizing: border-box; }
+      body { margin: 0; color: var(--ink); background: var(--soft); font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; line-height: 1.7; }
+      .wrap { width: min(100% - 40px, 900px); margin: 0 auto; }
+      header { padding: 76px 0 64px; color: #fff; background: linear-gradient(135deg, var(--navy), var(--blue)); }
+      .eyebrow { margin: 0 0 10px; color: #cfeaff; font-size: .9rem; font-weight: 700; letter-spacing: .08em; }
+      h1, h2, p { margin-top: 0; }
+      h1 { margin-bottom: 12px; font-size: clamp(2.2rem, 7vw, 4rem); line-height: 1.15; }
+      .lead { max-width: 650px; margin-bottom: 0; font-size: clamp(1rem, 2.5vw, 1.2rem); }
+      main { padding: 40px 0 56px; }
+      .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+      section { padding: 28px; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 8px 24px rgba(23, 59, 94, .06); }
+      .intro { grid-column: 1 / -1; }
+      h2 { margin-bottom: 16px; color: var(--navy); font-size: 1.25rem; }
+      .tags { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; list-style: none; }
+      .tags li { padding: 7px 12px; color: #1c6097; background: #e9f4fc; border-radius: 999px; font-size: .94rem; font-weight: 700; }
+      .contact-note { margin-bottom: 0; color: var(--muted); }
+      footer { padding: 24px 0 36px; color: var(--muted); font-size: .9rem; text-align: center; }
+      @media (max-width: 620px) { .wrap { width: min(100% - 32px, 900px); } header { padding: 58px 0 50px; } main { padding-top: 28px; } .grid { grid-template-columns: 1fr; gap: 16px; } section { padding: 22px; border-radius: 14px; } }
+    </style>
+  </head>
   <body>
-    <h1>안녕하세요, 제 홈페이지입니다</h1>
-    <p>Github Pages로 만들었습니다!</p>
+    <header>
+      <div class="wrap">
+        <p class="eyebrow">PERSONAL WEBSITE</p>
+        <h1>박성현</h1>
+        <p class="lead">안녕하세요, 첨단융합학부 26학번 06년생 박성현입니다.</p>
+      </div>
+    </header>
+    <main class="wrap">
+      <div class="grid">
+        <section class="intro" aria-labelledby="about-title">
+          <h2 id="about-title">소개</h2>
+          <p>새로운 것을 배우고 직접 만들어 보는 과정에 관심이 많습니다. 이곳에 공부와 활동 기록을 차곡차곡 남겨 갈 예정입니다.</p>
+        </section>
+        <section aria-labelledby="interest-title">
+          <h2 id="interest-title">관심사</h2>
+          <ul class="tags"><li>첨단 기술</li><li>융합 학문</li><li>웹 개발</li><li>새로운 배움</li></ul>
+        </section>
+        <section aria-labelledby="contact-title">
+          <h2 id="contact-title">연락처</h2>
+          <p class="contact-note">연락처는 추후 이곳에 추가할 예정입니다.</p>
+        </section>
+      </div>
+    </main>
+    <footer>© 2026 박성현. All rights reserved.</footer>
   </body>
 </html>
